@@ -2,8 +2,8 @@
 Basic techniques for systems security analysis
 
 # Table of Contents
-1. [Description d'analyse](#Description d'analyse)
-2. [Identification des vulnérabilités](#Identification des vulnérabilités)
+1. [Description d'analyse](#Description-d'analyse)
+2. [Identification des vulnérabilités](#Identification-des-vulnérabilités)
 3. [Third Example](#third-example)
 4. [Références](#Références)
 
