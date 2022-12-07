@@ -42,3 +42,6 @@ Puis on essyera avec une injection SQL à partir de la page de mise à jour de m
 => Notre application est vulnérable aux différentes types des injections SQL
 
 ## Références
+<ol>
+  <li>Droits d'accès aux bases de données : https://www.ibm.com/docs/en/informix-servers/12.10?topic=statement-database-level-privileges </li>
+</ol>
