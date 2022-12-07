@@ -1,21 +1,21 @@
 # Basic Systems Security Analysis
 Basic techniques for systems security analysis
 
-# Table of Contents
+## Table of Contents
 1. [Description d'analyse](#Description-d'analyse)
 2. [Identification des vulnérabilités](#Identification-des-vulnérabilités)
 3. [Third Example](#third-example)
 4. [Références](#Références)
 
-# Description d'analyse
+## Description d'analyse
 
 On va lancer une analyse de sécurité sur l'application web sous le répertoire /vul-app. Dans le rapport suivant on détaillera l'impact de chaque vulnérabilité detecté ainsi que l'application d'un correctif qui nous permettera de se protéger de cette dernière. La nouvelle version sécurisée de l'application sera sous le répertoire /sec-app. Des tests d'efficacité des correctifs apportés seront faits sur la nouvelle version et seront détaillés également dans ce rapport.
 
-# Identification des vulnérabilités
+## Identification des vulnérabilités
 
-## Injections SQL
+### Injections SQL
 
-### 1- Select
+#### 1- Select
 
 Entrant la chaine de caractères suivantes : 
 
@@ -25,7 +25,7 @@ On s'apperçoit qu'on peut accèder aux données de l'utilisateur ayant l'id 200
 
 ![image](https://user-images.githubusercontent.com/114408910/206226217-bf16b4c3-28b4-433b-be57-656588fd91a3.png)
 
-### 2- Update
+#### 2- Update
 
 On va essayer de mettre à jour le salaire d'un utilisateur avec une injection SQL. Pour cela, on suppose qu'on pocéde l'id et le mot de passe de l'utilisateur. On va accèder au profil de l'utilisateur et on va se mettre sur la page de la mise à jour du profil. On va exécuter cet exemple sur Ryan ayant l'id 30000.
 
@@ -41,4 +41,4 @@ Puis on essyera avec une injection SQL à partir de la page de mise à jour de m
 
 => Notre application est vulnérable aux différentes types des injections SQL
 
-# Références
+## Références
