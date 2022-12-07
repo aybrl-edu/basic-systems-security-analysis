@@ -9,6 +9,8 @@ Basic techniques for systems security analysis
 
 # Description d'analyse
 
+On va lancer une analyse de sécurité sur l'application web sous le répertoire /vul-app. Dans le rapport suivant on détaillera l'impact de chaque vulnérabilité detecté ainsi que l'application d'un correctif qui nous permettera de se protéger de cette dernière. La nouvelle version sécurisée de l'application sera sous le répertoire /sec-app. Des tests d'efficacité des correctifs apportés seront faits sur la nouvelle version et seront détaillés également dans ce rapport.
+
 # Identification des vulnérabilités
 
 ## Injections SQL
