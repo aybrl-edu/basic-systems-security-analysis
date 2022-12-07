@@ -6,3 +6,28 @@ Basic techniques for systems security analysis
 # Identification des vulnérabilités
 
 ## Injections SQL
+
+### 1- Select
+
+Entrant la chaine de caractères suivantes : 
+
+``` 20000' # ```
+
+On s'apperçoit qu'on peut accèder aux données de l'utilisateur ayant l'id 20000 sans devoir saisir un mot de passe. Cela prouve que notre application est vulnérable contre des injections SQL de type SELECT
+
+![image](https://user-images.githubusercontent.com/114408910/206226217-bf16b4c3-28b4-433b-be57-656588fd91a3.png)
+
+### 2- Update
+
+On va essayer de mettre à jour le salaire d'un utilisateur avec une injection SQL. Pour cela, on suppose qu'on pocéde l'id et le mot de passe de l'utilisateur. On va accèder au profil de l'utilisateur et on va se mettre sur la page de la mise à jour du profil. On va exécuter cet exemple sur Ryan ayant l'id 30000.
+
+On récupére tout d'abord son salaire initial
+
+![image](https://user-images.githubusercontent.com/114408910/206229400-fd7278a9-bfad-4ee6-946a-f93433343f91.png)
+
+Puis on essyera avec une injection SQL à partir de la page de mise à jour de mettre à jour son salaire.
+
+``` Rich_Ryan', Salary=10000000;# ```
+![image](https://user-images.githubusercontent.com/114408910/206233299-a98c7465-f347-48fc-bcbb-379c7f843291.png)
+
+=> Notre application est vulnérable aux différentes types des injections SQL
