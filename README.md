@@ -28,6 +28,7 @@ On récupére tout d'abord son salaire initial
 Puis on essyera avec une injection SQL à partir de la page de mise à jour de mettre à jour son salaire.
 
 ``` Rich_Ryan', Salary=10000000;# ```
+
 ![image](https://user-images.githubusercontent.com/114408910/206233299-a98c7465-f347-48fc-bcbb-379c7f843291.png)
 
 => Notre application est vulnérable aux différentes types des injections SQL
