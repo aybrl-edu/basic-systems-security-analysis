@@ -1,2 +1,2 @@
-# basic-systems-security-analysis
+# Basic Systems Security Analysis
 Basic techniques for systems security analysis
